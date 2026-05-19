@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS iiui_student_db;
+
+USE iiui_student_db;
+
+CREATE TABLE IF NOT EXISTS students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(120) NOT NULL,
+    reg_no VARCHAR(4) NOT NULL,
+    full_reg_no VARCHAR(40) NOT NULL,
+    name VARCHAR(80) NOT NULL,
+    degree_title VARCHAR(20) NOT NULL,
+    batch VARCHAR(10) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
